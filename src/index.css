@@ -1,0 +1,91 @@
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+}
+
+
+
+.calendar {
+    flex: 1;
+    min-height: 580px;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.calendar-month {
+    position: relative;
+    border: 1px solid #DDD;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0;
+    width: 100%;
+    height: 100%;
+}
+
+.month-row-header {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 100%;
+    font-weight: bold;
+    text-align: center;
+
+}
+    
+.month-row {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex: 1, 0, 0;
+    height: 100%;
+    min-height: 100px;
+    border-top: 1px solid #DDD;
+}
+
+.header-day {
+    background: #fff;
+    font-size: 14px;
+    padding: 0;
+    border: none;
+    max-width: calc(100% / 7);
+    width: 100%;
+    border-left: 1px solid #DDD;
+}
+
+.header-day:first-child {
+    border-left: none;
+}
+
+.day {
+    background: #fff;
+    font-size: 12px;
+    padding: 2px;
+    border: none;
+    border-left: 1px solid #DDD;
+    text-align: center;
+    max-width: calc(100% / 7);
+    flex-basis: calc(100% / 7);
+    text-align: right;
+}
+
+.day-disabled {
+    background: #E5E5E5;
+}
+
+.day:first-child {
+    border: none;
+}
+
+.toolbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.toolbar-label {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 16px;
+}
